@@ -17,7 +17,7 @@ export default function Home() {
     <Date1 />
     <Desc />
     <UseState />
-    <button onClick={OnClick}>submit</button>
+    <button onClick={OnClick}>Muncul Di Console</button>
     </div>
     
   )
