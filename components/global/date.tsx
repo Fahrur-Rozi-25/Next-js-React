@@ -1,7 +1,7 @@
 function Date1() {
     const tahun = new Date().getFullYear();
     return(
-        <footer>{tahun}</footer>
+        <footer>Tahun{tahun}</footer>
 
     )
 
