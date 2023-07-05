@@ -19,7 +19,7 @@ const colors = {
 export function Providers({ children }: {children: React.ReactNode }) {
   return (
     <CacheProvider>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         {children}
       </ChakraProvider>
     </CacheProvider>
