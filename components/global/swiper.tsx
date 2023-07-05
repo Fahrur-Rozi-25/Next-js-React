@@ -14,11 +14,11 @@ import './styles.css';
 import { Autoplay, Pagination, Navigation , EffectCards } from 'swiper/modules';
 
 export default function Swipers() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s : number, time : number, progress : number) => {
+  const progressCircle =  useRef<SVGSVGElement>(null);
+  const progressContent = useRef<HTMLDivElement>(null);
+  const onAutoplayTimeLeft = (s : any, time : number, progress : number) => {
     if (progressCircle.current) {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
+        progressCircle.current.style.setProperty('--progress', String(1 - progress));
         
     }
     if (progressContent.current) {
