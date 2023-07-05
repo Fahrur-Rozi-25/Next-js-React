@@ -17,8 +17,13 @@ export default function Swipers() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s : number, time : number, progress : number) => {
+    if (progressCircle.current) {
         progressCircle.current.style.setProperty('--progress', 1 - progress);
+        
+    }
+    if (progressContent.current) {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    }
   };
   return (
     <>
