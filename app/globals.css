@@ -134,3 +134,27 @@ body {
      width: 100%;
      
   }}
+  
+
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-text {
+    display: inline-block;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

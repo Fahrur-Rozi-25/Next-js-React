@@ -9,6 +9,7 @@ import Clock from "@/feature/clock"
 import MTK from "@/feature/math"
 import Ref from "@/components/event/useRef"
 import Swipers from "@/components/global/swiper"
+import ScrollingText from "@/components/information/scrollingText"
 
 
 
@@ -18,6 +19,8 @@ import Swipers from "@/components/global/swiper"
 export default function Home() {
   return (
     <>
+      <h1 className="text-center">Judul Halaman</h1>
+      <ScrollingText />
       <Swipers />
 
       <div className="text-center font-extrabold">
