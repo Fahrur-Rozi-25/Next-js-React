@@ -16,7 +16,7 @@ import { Autoplay, Pagination, Navigation , EffectCards } from 'swiper/modules';
 export default function Swipers() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s : any, time : any, progress : any) => {
+  const onAutoplayTimeLeft = (s : number, time : number, progress : number) => {
         progressCircle.current.style.setProperty('--progress', 1 - progress);
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
