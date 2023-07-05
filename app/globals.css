@@ -124,3 +124,13 @@ body {
 
 }
 
+@media screen and (max-width:724px) {
+  .swiper {
+     width: 100%;
+     margin: 6.5rem;
+     height: 15vh;
+  }
+  .swiper-slide img {
+     width: 100%;
+     
+  }}
