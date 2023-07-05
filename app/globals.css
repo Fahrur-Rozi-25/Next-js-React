@@ -128,7 +128,7 @@ body {
   .swiper {
      width: 100%;
      margin: 6.5rem;
-     height: 15vh;
+     height: auto;
   }
   .swiper-slide img {
      width: 100%;
