@@ -1,16 +1,26 @@
 
 'use client'
-import { useState } from "react";
+import { useState , useEffect } from "react";
+import Desc from "./desc";
+
 
 function UseState() {
-    const [isi , mengisiIsi] = useState("Sedang Di Test...")
-    console.log(isi);
+    const [isi , MenggantiIsi] = useState("Sedang Di Test...")
+
+    useEffect (() => {
+
+
+    }, [])
+
     return (
         <div> Use State Ber isi `{isi}`
         <br />
         ganti ke : 
         <br />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => mengisiIsi("Dalam Uji Coba")}> `Dalam Uji Coba` </button>
+        <Desc />
+
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => MenggantiIsi("Dalam Uji Coba")}> `Dalam Uji Coba` </button>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => MenggantiIsi("Sedang Di Test...")}> `Sedang Di Test...` </button>
             
             </div>
         

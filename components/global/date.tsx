@@ -1,7 +1,7 @@
 function Date1() {
     const tahun = new Date().getFullYear();
     return(
-        <footer>Tahun{tahun}</footer>
+        <div className="py-8">Tahun{tahun}</div>
 
     )
 

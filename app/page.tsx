@@ -6,6 +6,10 @@ import OnClick from "@/components/event/onclick"
 import Desc from "@/components/event/desc"
 import UseState from "@/components/event/useState"
 import Clock from "@/feature/clock"
+import MTK from "@/feature/math"
+import Ref from "@/components/event/useRef"
+import Swipers from "@/components/global/swiper"
+
 
 
 
@@ -13,14 +17,27 @@ import Clock from "@/feature/clock"
 
 export default function Home() {
   return (
-    <div className="text-center mt-7 font-extrabold">
-   <Header1 />
-   <Clock />
-    <Date1 />
-    <Desc />
-    <UseState />
-    <button onClick={OnClick}>Muncul Di Console</button>
-    </div>
+    <>
+      <Swipers />
+
+      <div className="text-center font-extrabold">
+    <Clock />
+    <Ref />
+      </div>
+    </>
+
+    
+
+  //   <div className="text-center font-extrabold">
+  //   <Swipers />
+  //  <Header1 />
+  //  <Clock />
+  //   <Date1 />
+  //   <Desc />
+  //   <UseState />
+  //   <Ref />
+  //   <button onClick={OnClick}>Muncul Di Console</button>
+  //   </div>
     
   )
 }

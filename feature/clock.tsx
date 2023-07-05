@@ -18,7 +18,7 @@ const Clock = () => {
   }, []);
 
   return (
-    <div>
+    <div className="text-orange-600 font-extrabold py-12">
       <h1>Waktu Saat Ini</h1>
       <p>{time.toLocaleTimeString()}</p>
     </div>
